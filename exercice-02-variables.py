@@ -16,6 +16,13 @@ name = "Quentin Farine"
 is_morning = True
 has_morning = False
 null = None
+print(nombre)
+print(gold)
+print(name)
+print(is_morning)
+print(has_morning)
+print(null)
+
 # code 2.1
 # la fonction `round()` permet d'arrondir un float en un integer
 # 0,1 est arrondi à la valeur inférieur
@@ -35,4 +42,17 @@ print(round(1 / 3, 4))
 # À chaque fois stockez le résultat dans une variable et affichez le résultat.
 
 # réponse 2.2
-
+nombre1 = 2
+nombre1 = float(nombre1)
+print(nombre1)
+nombre2 = 1.62
+nombre2 = int(nombre2)
+print(nombre2)
+nombre3 = 1.62
+nombre3 = round(nombre3,0)
+print(nombre3)
+nombre3 = int (nombre3)
+print(nombre3)
+nombre4 = 1.62
+nombre4 = round(nombre4,1)
+print(nombre4)

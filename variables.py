@@ -36,3 +36,11 @@ multiline_text = """foo
 'baz'
 bar"""
 print(multiline_text)
+
+nombre6 = 3.14
+print(type(nombre6))
+print(nombre6)
+
+nombre6 = int(nombre6)
+print(type(nombre6))
+print(nombre6)
