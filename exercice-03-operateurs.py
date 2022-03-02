@@ -6,12 +6,16 @@
 # Ne tenez pas compte du mois, on va partir du principe qu'on est après le 10 février pour ne pas se compliquer la vie.
 # Stockez l'année en cours dans une variable nommée `year`.
 # Calculez l'âge d'Alice en utilisant les variables `birthyear` et `year` puis stockez le résultat dans une variable nommée `age` et affichez ce résultat.
+
+
+# réponse 3.1
+from os import stat
+
+
 birthyear = 1988 
 years = 2022
 age = years - birthyear
 print(age)
-
-# réponse 3.1
 
 # exo 3.2
 # Bob veut distribuer tous ses bonbons et chocolats à ses amis.
@@ -23,7 +27,12 @@ candies = 15
 chocolates = 17
 friends = 3
 
+
 # réponse 3.2
+candies_rest = candies%3
+print(candies_rest)
+chocolates_rest=chocolates%3
+print(chocolates_rest)
 
 # exo 3.3
 # Suite de l'exercice précédent.
@@ -34,12 +43,18 @@ friends = 3
 # Il y en a un qui va tout de suite vous donner la réponse.
 
 # réponse 3.3
+candies_per_person = candies//friends
+print(candies_per_person)
 
+chocolates_per_person = chocolates//friends
+print(chocolates_per_person)
 # exo 3.4
 # Calculez la moyenne des nombres suivants : 1, 1, 2, 3, 5, 8, 13.
 # Affectez le résultat à une variable et affichez le résultat.
 
 # réponse 3.4
+moyenne = (1+1+2+3+5+8+13)/7
+print(moyenne)
 
 # exo 3.5
 # Alice est en vacance et elle veut suivre ses dépenses quotidiennes.
@@ -55,6 +70,17 @@ friends = 3
 # Affichez le nombre jours, le montant total et la moyenne des dépenses.
 
 # réponse 3.5
+day1 = 26.82
+day2 = 42.00
+day3 = 31.41
+day4 = 63.7
+day5 = 32
+days = 5
+total = day1+day2+day3+day4+day5
+average = total/days
+print(days)
+print(total)
+print(average)
 
 # exo 3.6
 # La formule suivante permet de convertir des miles en mètres :
@@ -69,6 +95,9 @@ friends = 3
 miles = 3
 
 # réponse 3.6
+meters = miles * 1609.344
+km = meters/1000
+print(round(km))
 
 # exo 3.7
 # La formule suivante permet de calculer le montant de la TVA à partir d'un prix « hors TVA » (HTVA) et du taux de la TVA en pourcentage
@@ -83,6 +112,8 @@ price = 314
 tax_rate = 20
 
 # réponse 3.7
+tva = price * (tax_rate/100)
+print(tva)
 
 # exo 3.8
 # La formule suivante permet de calculer un prix TVA inlcuse à partir du prix HTVA et du taux de TVA en pourcentage
@@ -101,6 +132,8 @@ price = 271
 tax_rate = 20
 
 # réponse 3.8
+tax_included_price = price + price * tax_rate / 100
+print(tax_included_price)
 
 # exo 3.9
 # Charly fait ses courses.
@@ -114,4 +147,14 @@ tax_rate = 20
 # Affichez le résultat booléen.
 
 # réponse 3.9
+choco1 = 1.79
+choco2 = 1.7
+price_kilo_1 = (choco1/120)*1000
+price_kilo_2 = choco2*10
+print(price_kilo_1)
+print(price_kilo_2)
+
+print(price_kilo_1 < price_kilo_2) 
+
+
 
