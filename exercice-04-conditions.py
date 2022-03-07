@@ -93,7 +93,7 @@ number = random.randint(0, 99)
 print(number)
 
 # réponse 4.5
-print(number)
+
 if number<50 :
     print('le nombre est compris entre 0 et 49')
 else :
@@ -110,10 +110,10 @@ number = random.randint(0, 99)
 print(number)
 
 # réponse 4.6
-print(number)
+
 if number<34:
     print("le nombre est compris entre 0 et 33 inclus")
-elif 34>=number and number<=66 :
+elif 34<= number <=66 :
     print('le nombre est compris entre 34 et 66 inclus')
 else :
     print('le nombre n\'est pas compris entre 0 et 66 inclus')
@@ -166,3 +166,4 @@ elif mails == 1 :
     print("il y a un nouveau mails")
 else :
     print(f"il y a {mails} nouveaux mails")
+
