@@ -6,7 +6,14 @@
 
 # réponse 5.1
 def multiplication(a: float, b: float) -> float:
+    """Renvoie le produit des nombres a et b
+    
+    a float le nombre a
+    b float le nombre b
+    return float
+    """
     return a * b
+print(help(multiplication))
 
 # exo 5.2
 # Trouvez la position de la chaîne de caractères `minim`
@@ -28,7 +35,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 # réponse 5.3
-modif_text = print(my_text[12 : 21])
+modif_text = my_text[12 : 21]
 print(modif_text)
 
 # code 5.1
@@ -45,6 +52,9 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 # réponse 5.4
+my_modif = my_text.split(' ')
+
+print(my_modif[5:6])
 
 # code 5.2
 # En python, un saut de ligne dans une chaîne de caractères peut être obtenu en utilisant un caractère échappé
@@ -73,4 +83,13 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 # réponse 5.5
+sl = my_text.find('\n')
+print(sl)
+sl1 = my_text.find('\n',124)
+print(sl1)
+sl2 = my_text.find('\n',232)
+print(sl2)
+sl3 = my_text.find('\n',335)
+print(sl3)
+
 
