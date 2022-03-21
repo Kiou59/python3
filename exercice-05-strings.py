@@ -82,14 +82,11 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
-# réponse 5.5
-sl = my_text.find('\n')
-print(sl)
-sl1 = my_text.find('\n',124)
-print(sl1)
-sl2 = my_text.find('\n',232)
-print(sl2)
-sl3 = my_text.find('\n',335)
-print(sl3)
+# # réponse 5.5
+text = my_text.split('\n')
+
+print(len(text))
+
+
 
 
