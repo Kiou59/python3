@@ -9,7 +9,7 @@
 
 
 # réponse 3.1
-from os import stat
+
 
 
 birthyear = 1988 

@@ -3,6 +3,9 @@
 # foo
 # bar 
 # bazz
+from re import A
+
+
 nombre = 123
 print(nombre)
 print(type(nombre))
@@ -75,3 +78,46 @@ print(my_var)
 my_var = [132 , 'abc', False]
 my_var = bool(my_var)
 print(my_var)
+
+my_var = 0
+my_var = bool(my_var)
+print(my_var)
+my_var = [132 , 'abc', False]
+my_var = bool(my_var)
+print(my_var)
+
+# swap
+
+a = 42
+b = 123
+
+#  a == 123 et b == 42
+
+# a = b
+# b = a/3 + 1
+# print(b)
+
+# classique
+# c = a
+# a = b
+# b = c
+
+# destructured assignement
+
+# a, b = b, a
+
+
+a = a + b
+b = a - b
+a = a - b
+
+print(a)
+
+# arrondi
+
+import decimal
+from decimal import Decimal
+
+decimal.getcontext().rounding = decimal.ROUND_HALF_UP
+print(Decimal("0.5").quantize(Decimal("1"))) 
+print(Decimal("1.5").quantize(Decimal("1"))) 

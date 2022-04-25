@@ -55,8 +55,9 @@ my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
 
 # réponse 6.7
 print(my_list)
-my_list[1]='lorem'
-my_list[3]='bar'
+my_list[1]='bar'
+my_list[3]='lorem'
+my_list[1], my_list[3] = my_list[3] , my_list[1]
 print(my_list)
 
 # Remarque 6.2
@@ -148,6 +149,9 @@ my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.15
 
+my_list[0 :6:2],my_list[1 : 6 : 2]  = my_list[1 : 6 : 2] ,my_list[0 :6:2]
+print(my_list)
+
 
 # exo 6.16
 # Triez la liste en utilisant l'algorithme du tri bulle puis affichez la liste
@@ -168,6 +172,7 @@ matrix = [
 # Cette ligne affiche `6`
 print(matrix[1][2])
 
+
 # exo 6.17
 # Affichez la valeur qui se trouve à la colonne 4, ligne 3
 # Attention : il faut faire `- 1` pour obtenir les index correspondant
@@ -181,6 +186,10 @@ for _ in range(0, size):
 print(matrix)
 
 # réponse 6.17
+print('réponse')
+print(matrix[2][3])
+
+
 
 # code 6.2
 # Pour afficher toutes les combinaisons possibles de deux nombres de 0 à n inclus vous pouvez utiliser deux boucles `for` imbriquées
@@ -195,3 +204,11 @@ for i in range(0, 3):
 
 # réponse 6.18
 
+print (len(matrix))
+print(matrix)
+
+for i in range(len(matrix)):
+    for j in range(len(matrix[i])):
+        if matrix[i][j]<=50:
+            print(matrix[i][j])
+            print(i,j)

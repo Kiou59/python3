@@ -13,7 +13,7 @@ def multiplication(a: float, b: float) -> float:
     return float
     """
     return a * b
-print(help(multiplication))
+help(multiplication)
 
 # exo 5.2
 # Trouvez la position de la chaîne de caractères `minim`
