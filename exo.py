@@ -25,7 +25,7 @@ for i in count:
     if  i%3 == 0:
         print(i)
 
-```# algo : tirage de 2 nombres différents parmi 5
+# algo : tirage de 2 nombres différents parmi 5
 numbers = []
 
 # 1er tirage
@@ -39,4 +39,4 @@ while len(numbers)<4:
         numbers.append(n)
 
         
-print(numbers)```
+print(numbers)
