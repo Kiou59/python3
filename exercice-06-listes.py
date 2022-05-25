@@ -158,6 +158,20 @@ print(my_list)
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.16
+while True:
+    moved = False
+    for i in range(0,len(my_list)-1):
+        a = my_list[i]
+        b = my_list[i+1]
+
+        if a > b:
+            my_list[i], my_list[i+1] = my_list[i+1], my_list[i]
+            moved = True
+
+    if moved== False:
+        break
+
+print(my_list)
 
 # code 6.1
 # Lire la valeur de la ligne `m` et de la colonne `n` d'un tableau en 2 dimensions
