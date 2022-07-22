@@ -105,13 +105,13 @@ class ProductLorem :
     def __init__(self, name :str = '', price=0.0) :
         self.name = name
         self.price = price
-    def get_name(self):
+    def _get_name(self):
         return self.name
-    def set_name(self, name):
+    def _set_name(self, name):
         self.name = name
-    def get_price(self):
+    def _get_price(self):
         return self.price
-    def set_price(self, price):
+    def _set_price(self, price):
         self.price = price
 
     
@@ -133,12 +133,12 @@ product1 = ProductLorem()
 product2 = ProductLorem()
 product3 = ProductLorem()
 
-product1.set_name('foo')
-product1.set_price(31.41)
-product2.set_name('bar')
-product2.set_price(27.18)
-product3.set_name('baz')
-product3.set_price(16.18)
+product1._set_name('foo')
+product1._set_price(31.41)
+product2._set_name('bar')
+product2._set_price(27.18)
+product3._set_name('baz')
+product3._set_price(16.18)
 
 # exo 12.6
 # Ajoutez chacune des instances de la classe `ProductLorem` à une liste nommée `products`
@@ -146,13 +146,14 @@ product3.set_price(16.18)
 # Calculez la somme du prix des produits et affichez-en un arrondi à 2 chiffres après la virgule, après la boucle `for`
 
 # réponse 12.6
+print("reponse 12.6")
 priceTotal = 0
 products = [product1, product2 , product3]
 for product in products:
-    priceTotal += product.price
+    priceTotal += product._get_price()
 print(round(priceTotal, 2))
 
-print(product3.name)
+print(priceTotal)
 
 # exo 12.7
 # Créez une classe nommée `ProductIpsum` qui possède les attributs suivants :
@@ -175,21 +176,21 @@ class ProductIpsum:
         self.name = name
         self.price = price
         self.tax = tax
-    def get_name(self):
+    def _get_name(self):
         return self.name
-    def set_name(self, name):
+    def _set_name(self, name):
         self.name = name
-    def get_price(self):
+    def _get_price(self):
         return self.price
-    def set_price(self, price):
+    def _set_price(self, price):
         self.price = price 
-    def get_tax(self):
+    def _get_tax(self):
         return self.tax + '%'
-    def set_tax( self, tax):
+    def _set_tax( self, tax):
         self.tax=tax/100
-    def get_tax_free(self):
+    def _get_tax_free(self):
         return self.price * self.tax/100
-    def get_tax_included_price(self) :
+    def _get_tax_included_price(self) :
         return self.price + (self.price * self.tax/100)
     
 
@@ -229,17 +230,17 @@ product3 = ProductIpsum('Amet', 16.18 , 5.5)
 products = [product1 , product2, product3]
 priceTotal = 0
 for product in products:
-    priceTotal+=product.price
+    priceTotal+=product._get_price()
 
 print(round(priceTotal, 2))
 taxTotal = 0
 for product in products:
-    taxTotal+= product.get_tax_free()
+    taxTotal+= product._get_tax_free()
 
 print(round(taxTotal,2))
 
 pricetaxTotal = 0
 for product in products:
-    pricetaxTotal+= product.get_tax_included_price()
+    pricetaxTotal+= product._get_tax_included_price()
 
 print(round(pricetaxTotal,2))

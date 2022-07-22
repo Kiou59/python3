@@ -42,9 +42,9 @@ number = random.randint(0, 9)
 print(number)
 
 # réponse 4.2
-number = number%2
-print(number)
-if number==0 :
+
+
+if number%2==0 :
     print("le nombre est pair")
 else :
     print("le nombre est impair")
@@ -59,10 +59,10 @@ number = random.randint(0, 9)
 print(number)
 
 # réponse 4.3
-number = number%3
+
 
 print(number)
-if number ==0 :
+if number%3 ==0 :
     print("le nombre est divisible par trois")
 else :
     print("le nombre n'est pas divisible par trois")
