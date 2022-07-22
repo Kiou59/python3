@@ -54,7 +54,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 # réponse 5.4
 my_modif = my_text.split(' ')
 
-print(my_modif[5:6])
+print(my_modif[5])
 
 # code 5.2
 # En python, un saut de ligne dans une chaîne de caractères peut être obtenu en utilisant un caractère échappé

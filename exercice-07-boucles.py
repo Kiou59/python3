@@ -83,7 +83,6 @@ for i in range(0, 10):
     count = []
 for i in range(0, 50):
     r = random.randint(1 , 10)
-
     if r == 7 :
         count.append(r)
 
@@ -100,7 +99,6 @@ print(count)
 count = 0
 for i in range(0, 10):
     r = random.randint(1 , 10)
-
     if r <= 4 :
         count +=1
 
@@ -116,7 +114,6 @@ print(count)
 count = 0
 for i in range(0, 33):
     r = random.randint(1 , 10)
-
     if r >= 7 :
         count +=1
 
@@ -131,7 +128,6 @@ print(count)
 count = 0
 for i in range(0, 66):
     r = random.randint(1 , 10)
-
     if r >= 9 or r <= 2 :
         count +=1
 
@@ -189,7 +185,7 @@ print(number ** 2)
 
 # réponse 7.16
 for i in range(0, 100):
-        print(i ** 2)
+    print(i ** 2)
 
 # code 7.3
 # pour calculer la puissance 3 d'un nombre, on peut l'élever à la puissance 3 avec l'opérateur puissance `**`
@@ -201,13 +197,15 @@ print(number ** 3)
 
 # réponse 7.17
 for i in range(0, 100):
-        print(i ** 3)
+    print(i ** 3)
 
 # exo 7.18
 # dans une boucle while, on tire un nombre entier `r` au hasard entre 1 et 100 inclus
 # boucler jusqu'à ce que la valeur 100 soit tirée au hasard
 
 # réponse 7.18
+print("reponse 7.18")
+r=0
 while r != 100 :
     r= random.randint(1,100)
     print(r)

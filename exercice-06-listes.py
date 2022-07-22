@@ -2,6 +2,7 @@
 
 from operator import index
 import random
+from re import I
 
 # Remarque 6.1
 # Dans le texte, quand il est écrit Xème position, cela correspond à l'index X-1
@@ -99,7 +100,10 @@ print(moy)
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.11
-print(my_list.index(3.14))
+print("reponse6.11")
+for i in my_list:
+    if i==3.14:
+        print(my_list.index(i))
 
 
 # exo 6.12
@@ -119,10 +123,9 @@ print(somme)
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.13
-for i in my_list:
-    if i<= 123:
-        new=(my_list.pop())*100
-        my_list.insert(0 , new)
+for i in range(0,len(my_list)):
+    my_list[i]= my_list[i]*100
+print("reponse 6.13")
 print(my_list)
 # exo 6.14
 # Créez une deuxième liste ne contenant que les nombre entiers de la liste
@@ -148,8 +151,14 @@ print(my_second_list)
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.15
+print('réponse 6.15')
+for i in range(0, len(my_list)-1):
+    if i%2==0:    
+        new=my_list[i]
+        print(new)
+        my_list[i]=my_list[i+1]
+        my_list[i+1]=new
 
-my_list[0 :6:2],my_list[1 : 6 : 2]  = my_list[1 : 6 : 2] ,my_list[0 :6:2]
 print(my_list)
 
 
