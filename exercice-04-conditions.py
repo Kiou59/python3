@@ -94,7 +94,7 @@ print(number)
 
 # réponse 4.5
 
-if number<50 :
+if 0<=number<=49 :
     print('le nombre est compris entre 0 et 49')
 else :
     print('le nombre n\'est pas compris entre 0 et 49')
@@ -111,7 +111,7 @@ print(number)
 
 # réponse 4.6
 
-if number<34:
+if 0<=number<=33:
     print("le nombre est compris entre 0 et 33 inclus")
 elif 34<= number <=66 :
     print('le nombre est compris entre 34 et 66 inclus')
